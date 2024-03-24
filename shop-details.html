@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              productBg: "#f3f2ee",
+              textA: "#111111",
+              textSpan: "#b7b7b7",
+              iconS: "#f7941d",
+              spanR: "#3d3d3d",
+              h3: "#0d0d0d",
+              border: "#e5e5e5",
+              colorR: "#0b090c",
+              label2: "#20315f",
+              label3: "#f1af4d",
+              label4: "#ed1c24",
+              borderB: "#e53637",
+              footer: "#007bff",
+            },
+            fontFamily: {
+              customFont: ['"Nunito Sans"', "sans-serif"],
+              font2: ['"FontAwesome"'],
+            },
+            backgroundImage: {
+              "thumb-1": "url('/img/shop-details/thumb-1.png')",
+              "thumb-2": "url('/img/shop-details/thumb-2.png')",
+              "thumb-3": "url('/img/shop-details/thumb-3.png')",
+              "thumb-4": "url('/img/shop-details/thumb-4.png')",
+              "product-1": "url('/img/product/product-1.jpg')",
+              "product-2": "url('/img/product/product-2.jpg')",
+              "product-3": "url('/img/product/product-3.jpg')",
+              "product-4": "url('/img/product/product-4.jpg')",
+            },
+          },
+        },
+      };
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body
+    class="m-0 text-base font-normal leading-6 text-left bg-white h-full antialiased"
+  >
+    <!--Header Start-->
+
+    <header class="bg-white mx-auto px-[15px] my-[25px]">
+      <nav class="flex justify-between items-center w-[92%] mx-auto">
+        <div class="">
+          <a href="index.html">
+           <img class="" src="img/shop-details/logo.png" alt=""/>
+          </a>
+        </div>
+        <div class="nav-links md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-[50%] flex items-center px-5">
+          <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 ">
+            <li>
+              <a class="hover:underline decoration-red-500" href="#">Home</a>
+            </li>
+            <li>
+              <a class="underline decoration-red-700 href="#">Shop</a>
+            </li>
+            <li>
+              <a class="hover:underline decoration-red-500" href="#">Pages</a>
+            </li>
+            <li>
+              <a class="hover:underline decoration-red-500" href="#">Blog</a>
+            </li>
+            <li>
+              <a class="hover:underline decoration-red-500" href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center text-right">
+          <a href="#" class="">
+            <img src="img/icon/search.png" alt="">
+          </a>
+          <a href="#"class="px-5 py-2">
+            <img src="img/icon/heart.png" alt="">
+          </a>
+          <a href="#"class="px-1 py-2 ">
+            <img src="img/icon/cart.png" alt=""> <!-- <span class="text-xs absolute top-[10px] right-[85px] ">0</span> -->
+          </a>
+          <div class="px-1">$0.00</div>
+        </div>
+        <div class="flex items-center gap-6">
+          <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+        </div>
+        
+      </nav>
+    </header>
+
+    <!--Header End-->
+
+    <!-- Hero Section Start-->
+
+    <section class="block">
+      <div class="text-center bg-productBg pt-10 pr-0 pb-14 mb-24">
+        <div class="w-full pr-3.5 pl-3.5 mr-auto ml-auto">
+          <div class="flex flex-wrap -mr-[-100px] -ml-[-100px]">
+            <div class="relative w-full pr-3.5 pl-3.5">
+              <div class="mb-7">
+                <a
+                  href="#"
+                  class="text-sm text-textA mr-3.5 inline-block relative"
+                  >Home <i class="fa-solid fa-angle-right font-font2"></i></a
+                >
+                <a
+                  href="#"
+                  class="text-sm text-textA mr-3.5 inline-block relative"
+                  >Shop <i class="fa-solid fa-angle-right font-font2"></i></a
+                >
+                <span class="text-sm text-textSpan inline-block relative"
+                  >Product Details</span
+                >
+              </div>
+            </div>
+          </div>
+          <div id="tshirt" class="flex flex-nowrap -mr-[-100px] -ml-[-100px]">
+            <div class="w-full px-3.5">
+              <ul
+                class="border-none w-28 flex flex-wrap pl-0 mb-0 list-none p-0 m-0"
+              >
+                <li class="mb-2.5">
+                  <a
+                    href="#tabs-1"
+                    class="bg-transparent border-transparent p-0 block"
+                  >
+                    <div
+                      class="h-32 w-24 flex items-center justify-center bg-[url(./img/shop-details/thumb-1.png)] bg-no-repeat bg-cover bg-top bg-center"
+                    ></div>
+                  </a>
+                </li>
+                <li class="mb-2.5">
+                  <a
+                    id="tabs2"
+                    href="#tabs-2"
+                    class="border-solid border-t-4 border-l-4 border-r-4 border-transparent p-0 block"
+                  >
+                    <div
+                      class="h-32 w-24 flex items-center justify-center bg-[url(./img/shop-details/thumb-2.png)] bg-no-repeat bg-cover bg-top bg-center"
+                    ></div>
+                  </a>
+                </li>
+                <li class="mb-2.5">
+                  <a
+                    id="tabs33"
+                    href="#tabs-3"
+                    class="border-solid border-t-4 border-l-4 border-r-4 border-transparent p-0 block"
+                  >
+                    <div
+                      class="h-32 w-24 flex items-center justify-center bg-no-repeat bg-cover bg-top bg-center bg-[url(./img/shop-details/thumb-3.png)]"
+                    ></div>
+                  </a>
+                </li>
+                <li class="mb-2.5">
+                  <a
+                    id="tabs44"
+                    href="tabs-4"
+                    class="border-solid border-t-4 border-l-4 border-r-4 border-transparent p-0 block"
+                  >
+                    <div
+                      class="h-32 w-24 flex items-center justify-center bg-[url(./img/shop-details/thumb-4.png)] bg-no-repeat bg-cover bg-top bg-center"
+                    ></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div id="#" class="relative w-full pr-3.5 pl-3.5 mr-[25%]">
+              <div>
+                <div id="tabs-1" class="block">
+                  <div class="relative">
+                    <img
+                      id="hir"
+                      src="img/shop-details/product-big-2.png"
+                      alt=""
+                      class="max-w-full border-none text-center"
+                    />
+                  </div>
+                </div>
+                <div id="tabs-22" class="block">
+                  <div class="relative">
+                    <img alt="" class="max-w-full align-middle border-none" />
+                  </div>
+                </div>
+                <div id="tabs-3" class="block">
+                  <div class="relative">
+                    <img alt="" class="max-w-full align-middle border-none" />
+                  </div>
+                </div>
+                <div id="tabs-4" class="block">
+                  <div class="relative">
+                    <img alt="" class="max-w-full align-middle border-none" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="w-full px-[15px] mx-auto">
+          <div class="justify-center flex flex-wrap mx-[-15px]">
+            <div class="relative w-full px-[15px]">
+              <div class="text-center ">
+                <h4 class="text-textA text-2xl font-bold mb-2.5">Hooded thermal anorak</h4>
+                <div class="mb-5">
+                  <i class="fa fa-star text-iconS text-sm inline-block mr-[-5px]"></i>
+                  <i class="fa fa-star text-iconS text-sm inline-block mr-[-5px]"></i>
+                  <i class="fa fa-star text-iconS text-sm inline-block mr-[-5px]"></i>
+                  <i class="fa fa-star text-iconS text-sm inline-block mr-[-5px]"></i>
+                  <i class="fa fa-star-o text-iconS text-sm inline-block mr-[-5px]"></i>
+                  <span class="inline-block text-spanR ml-[5px]"> - 5 Reviews</span>
+                </div>
+                <h3 class="font-bold mb-4 text-h3 text-3xl font-customFont ">$270.00 <span class="text-textSpan text-xl font-normal ml-2.5 line-through">70.00</span></h3>
+                <p class="mb-[35px] text-[15px] text-spanR font-normal leading-6 mt-0 mb-[15px] ">Coat with quilted lining and an adjustable hood. Featuring long sleeves with adjustable cuff tabs, adjustable asymmetric hem with elastic side tabs and a front zip fastening with placket.</p>
+                <div class="m-[30px]">
+                  <div class="inline-block mr-[50px]">
+                    <span class="text-textA inline-block mr-2.5">Size :</span>
+                    <label for="xxl" class="text-textA text-[15px] font-bold uppercase inline-block border-solid border-[#e5e5e5] border-[1px] py-[5px] px-[15px] mb-0 mb-[10px] cursor-pointer active:bg-black active:text-white">xxl <input type="radio" id="xxl" class="absolute invisible box-border p-0"></label>
+                    <label for="xl" class="text-textA text-[15px] font-bold uppercase inline-block border-solid border-[#e5e5e5] border-[1px] py-[5px] px-[15px] mb-0 mb-[10px] cursor-pointer active:bg-black active:text-white">xl <input type="radio" id="xl" class="absolute invisible box-border p-0"></label>
+                    <label for="l" class="text-textA text-[15px] font-bold uppercase inline-block border-solid border-[#e5e5e5] border-[1px] py-[5px] px-[15px] mb-0 mb-[10px] cursor-pointer active:bg-black active:text-white">l <input type="radio" id="l" class="absolute invisible box-border p-0 "></label>
+                    <label for="s" class="text-textA text-[15px] font-bold uppercase inline-block border-solid border-[#e5e5e5] border-[1px] py-[5px] px-[15px] mb-0 mb-[10px] cursor-pointer active:bg-black active:text-white">s <input type="radio" id="s" class="absolute invisible box-border p-0 "></label>
+                  </div>
+                  <div class="inline-block relative top-[10px]">
+                    <span class="text-textA inline-block mr-2.5 relative top-[-9px]">Color :</span>
+                    <label for="sp-1" class="bg-colorR h-[30px] w-[30px] rounded-[50%] relative mr-2.5 mb-0 inline-block cursor-pointer border-solid border-[3px]">
+                      <input type="radio" id="sp-1" class="absolute invisible box-border p-0 overflow-visible">
+                    
+                    </label>
+                    <label for="sp-2" class="bg-label2 h-[30px] w-[30px] rounded-[50%] relative mr-2.5 mb-0 inline-block cursor-pointer border-solid border-[3px]">
+                      <input type="radio" id="sp-1" class="absolute invisible box-border p-0 overflow-visible">
+                    </label>
+                    <label for="sp-3" class="bg-label3 h-[30px] w-[30px] rounded-[50%] relative mr-2.5 mb-0 inline-block cursor-pointer border-solid border-[3px]">
+                      <input type="radio" id="sp-1" class="absolute invisible box-border p-0 overflow-visible">
+                    </label>
+                    <label for="sp-4" class="bg-label4 h-[30px] w-[30px] rounded-[50%] relative mr-2.5 mb-0 inline-block cursor-pointer border-solid border-[3px]">
+                      <input type="radio" id="sp-1" class="absolute invisible box-border p-0 overflow-visible">
+                    </label>
+                    <label for="sp-5" class="bg-white h-[30px] w-[30px] rounded-[50%] relative mr-2.5 mb-0 inline-block cursor-pointer border-solid border-[3px]">
+                      <input type="radio" id="sp-1" class="absolute invisible box-border p-0 overflow-visible">
+                    </label>
+                  </div>
+                </div>
+                <div class="mb-[25px]"> 
+                  <div class="inline-block mr-[20px]">
+                    <div class="w-full h-10 border-solid border-[#e5e5e5] border-[1px] relative">
+                      <span id="minus" class="fa fa-angle-up inline-block text-lg text-h3 absolute right-[15px] top-[3px] h-2.5 w-2.5 cursor-pointer font-semibold"></span>
+                      <input id="num" type="text" value="1" class="text-h3 text-[15px] font-bold w-[70px] h-full text-center border-none pr-[15px]">
+                      <span id="plus" class="fa fa-angle-down top-[16px] text-lg text-h3 absolute right-[15px] h-2.5 w-2.5 cursor-pointer font-semibold"></span>
+                    </div>  
+                  </div>
+                  <a href="#" class="inline-block text-[13px] font-bold uppercase px-[30px]  py-[15px] text-white bg-black no-underline tracking-[4px]" >add to cart</a>
+                </div>
+                <div class="mb-[40px]">
+                  <a href="#" class="inline-block text-[13px] text-spanR tracking-[2px] uppercase font-bold mr-[20px]"><i class="fa fa-heart"></i> add to wishlist</a>
+                  <a href="#" class="mr-0 inline-block text-[13px] text-spanR tracking-[2px] uppercase font-bold "><i class="fa fa-exchange inline-block"></i> Add To Compare</a>
+                </div>
+                <div>
+                  <h5 class="text-black font-bold text-xl relative mb-[26px] ">
+                    <span class="bg-white pt-0 pr-[30px] ">Guarenteed Safe Checkout</span>
+                  </h5>
+                  <img src="img/shop-details/details-payment.png" alt="" class="max-w-full align-middle border-none mx-[30%] absolute">
+                  <ul class="pt-10 p-0 m-0">
+                    <li class="list-none text-[15px] text-textA font-bold leading-[30px]">
+                      <span class="font-normal text-textSpan ">SKU :</span>
+                      3812812
+                    </li>
+                  </ul>
+                    <li class="list-none text-[15px] text-textA font-bold leading-[30px]">
+                      <span class="font-normal text-textSpan ">Categories :</span>
+                      Clothes
+                    </li>
+                  </ul>
+                    <li class="list-none text-[15px] text-textA font-bold leading-[30px]">
+                      <span class="font-normal text-textSpan ">Tag :</span>
+                      Clothes, Skin, Body
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap mx-[-15px]">
+            <div class="relative w-full px-[15px]">
+              <div class="pt-[60px]">
+                <ul class="flex flex-wrap pl-0 mb-0 list-none justify-center border-b-rose-700 font-customFont">
+                  <li class="mr-[50px] mb-[-1px]">
+                    <a href="#tabs-5" class="border-b-rose-700 border-b-solid border-b-[2px]  text-[20px] text-textSpan p-0 border-none font-bold pb-2.5">Description</a>
+                  </li>
+                  <li class="mr-[50px] mb-[-1px]">
+                    <a href="#tabs-6" class="text-[20px] text-textSpan p-0 border-none font-bold pb-2.5">Customer Previews(5)</a>
+                  </li>
+                  <li class="mr-0">
+                    <a href="#tabs-7" class="text-[20px] text-textSpan p-0 border-none font-bold pb-2.5">Additional Information</a>
+                  </li>
+                </ul>
+                <div>
+                  <div id="#tabs-5" class="block">
+                    <div class="pt-[35px]">
+                      <p class="text-black text-lg font-bold leading-7 mb-[25px] font-customFont">Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut risus. Sedcus faucibus an sullamcorper mattis drostique des commodo pharetras loremos.</p>
+                      <div class="mb-[30px]">
+                        <h5 class="text-black text-[20px] font-bold mb-[12px]">Product Information</h5>
+                        <p class="text-[15px] font-customFont text-spanR font-normal mx-0 mt-0 mb-[15px]">A Pocket PC is a handheld computer, which features many of the same capabilities as a modern PC. These handy little devices allow individuals to retrieve and store e-mail messages, create a contact file, coordinate appointments, surf the internet, exchange text messages and more. Every product that is labeled as a Pocket PC must be accompanied with specific software to operate the unit and must feature a touchscreen and touchpad.</p>
+                        <p class="text-[15px] font-customFont text-spanR font-normal mx-0 mt-0 mb-[15px]">As is the case with any new technology product, the cost of a Pocket PC was substantial during it’s early release. For approximately $700.00, consumers could purchase one of top-of-the-line Pocket PCs in 2003. These days, customers are finding that prices have become much more reasonable now that the newness is wearing off. For approximately $350.00, a new Pocket PC can now be purchased.</p>
+                      </div>
+                      <div class="mb-0">
+                        <h5 class="text-black text-[20px] font-bold mb-[12px]">Material Used</h5>
+                        <p class="text-[15px] font-customFont text-spanR font-normal mx-0 mt-0 mb-[15px]">Polyester is deemed lower quality due to its none natural quality’s. Made from synthetic materials, not natural like wool. Polyester suits become creased easily and are known for not being breathable. Polyester suits tend to have a shine to them compared to wool and cotton suits, this can make the suit look cheap. The texture of velvet is luxurious and breathable. Velvet is a great choice for dinner party jacket and can be worn all year round.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="#tabs-6" class="hidden">
+                    <div class="pt-[35px]">
+                      
+                      <div class="mb-[30px]">
+                        <h5 class="text-black text-[20px] font-bold mb-[12px]">Product Information</h5>
+                        <p class="text-[15px] font-customFont text-spanR font-normal mx-0 mt-0 mb-[15px]">A Pocket PC is a handheld computer, which features many of the same capabilities as a modern PC. These handy little devices allow individuals to retrieve and store e-mail messages, create a contact file, coordinate appointments, surf the internet, exchange text messages and more. Every product that is labeled as a Pocket PC must be accompanied with specific software to operate the unit and must feature a touchscreen and touchpad.</p>
+                        <p class="text-[15px] font-customFont text-spanR font-normal mx-0 mt-0 mb-[15px]">As is the case with any new technology product, the cost of a Pocket PC was substantial during it’s early release. For approximately $700.00, consumers could purchase one of top-of-the-line Pocket PCs in 2003. These days, customers are finding that prices have become much more reasonable now that the newness is wearing off. For approximately $350.00, a new Pocket PC can now be purchased.</p>
+                      </div>
+                      <div class="mb-0">
+                        <h5 class="text-black text-[20px] font-bold mb-[12px]">Material Used</h5>
+                        <p class="text-[15px] font-customFont text-spanR font-normal mx-0 mt-0 mb-[15px]">Polyester is deemed lower quality due to its none natural quality’s. Made from synthetic materials, not natural like wool. Polyester suits become creased easily and are known for not being breathable. Polyester suits tend to have a shine to them compared to wool and cotton suits, this can make the suit look cheap. The texture of velvet is luxurious and breathable. Velvet is a great choice for dinner party jacket and can be worn all year round.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="#tabs-7" class="hidden">
+                    <div class="pt-[35px]">
+                      <p class="text-black text-lg font-bold leading-7 mb-[25px] font-customFont">Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut risus. Sedcus faucibus an sullamcorper mattis drostique des commodo pharetras loremos.</p>
+                      <div class="mb-[30px]">
+                        <h5 class="text-black text-[20px] font-bold mb-[12px]">Product Information</h5>
+                        <p class="text-[15px] font-customFont text-spanR font-normal mx-0 mt-0 mb-[15px]">A Pocket PC is a handheld computer, which features many of the same capabilities as a modern PC. These handy little devices allow individuals to retrieve and store e-mail messages, create a contact file, coordinate appointments, surf the internet, exchange text messages and more. Every product that is labeled as a Pocket PC must be accompanied with specific software to operate the unit and must feature a touchscreen and touchpad.</p>
+                        <p class="text-[15px] font-customFont text-spanR font-normal mx-0 mt-0 mb-[15px]">As is the case with any new technology product, the cost of a Pocket PC was substantial during it’s early release. For approximately $700.00, consumers could purchase one of top-of-the-line Pocket PCs in 2003. These days, customers are finding that prices have become much more reasonable now that the newness is wearing off. For approximately $350.00, a new Pocket PC can now be purchased.</p>
+                      </div>
+                      <div class="mb-0">
+                        <h5 class="text-black text-[20px] font-bold mb-[12px]">Material Used</h5>
+                        <p class="text-[15px] font-customFont text-spanR font-normal mx-0 mt-0 mb-[15px]">Polyester is deemed lower quality due to its none natural quality’s. Made from synthetic materials, not natural like wool. Polyester suits become creased easily and are known for not being breathable. Polyester suits tend to have a shine to them compared to wool and cotton suits, this can make the suit look cheap. The texture of velvet is luxurious and breathable. Velvet is a great choice for dinner party jacket and can be worn all year round.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section End-->
+
+    <!-- Product section start-->
+
+    <section class="pb-[55px] pt-[100px]">
+      <div class="px-[15px] mx-0">
+        <div class="flex flex-wrap mx-[-15px]">
+          <div class="relative w-full px-[15px]">
+            <h3 class="text-black font-bold mb-[45px] text-center text-3xl">Related Product</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center">
+          <div class="relative w-full px-[15px] md:w-1/6 sm:w-2/5 ">
+            <div class="overflow-hidden mb-10">
+              <div style="background-image: url(img/product/product-1.jpg);" class="h-[260px] relative bg-center bg-no-repeat bg-cover">
+                <span class="text-black text-[11px] font-bold tracking-[2px] uppercase inline-block pt-[4px] px-[15px] pb-[2px] bg-white absolute left-0 top-[20px]">New</span>
+              </div>
+              <div class="pt-[25px] relative">
+                <h6 class="text-black text-[15px] font-semibold transition-all">Piqué Biker Jacket</h6>
+                <div class="mb-[6px]">
+                  <i class="fa fa-star-o text-[14px] text-textSpan mr-[-5px]"></i>
+                  <i class="fa fa-star-o text-[14px] text-textSpan mr-[-5px]"></i>
+                  <i class="fa fa-star-o text-[14px] text-textSpan mr-[-5px]"></i>
+                  <i class="fa fa-star-o text-[14px] text-textSpan mr-[-5px]"></i>
+                  <i class="fa fa-star-o text-[14px] text-textSpan mr-[-5px]"></i>
+                </div>
+                <h5 class="text-h3 font-bold">$67.24</h5>
+                <div class="absolute right-0 bottom-0 opacity-0 transition-all"></div>
+              </div>
+            </div>
+          </div>
+          <div class="relative w-full px-[15px] md:w-1/6 sm:w-2/5">
+            <div class="overflow-hidden mb-10">
+              <div style="background-image: url(img/product/product-2.jpg);" class="h-[260px] relative bg-center bg-no-repeat bg-cover"></div>
+              <div class="pt-[25px] relative">
+                <h6 class="text-black text-[15px] font-semibold transition-all">Piqué Biker Jacket</h6>
+                <div class="mb-[6px]">
+                  <i class="fa fa-star-o text-[14px] text-textSpan mr-[-5px]"></i>
+                  <i class="fa fa-star-o text-[14px] text-textSpan mr-[-5px]"></i>
+                  <i class="fa fa-star-o text-[14px] text-textSpan mr-[-5px]"></i>
+                  <i class="fa fa-star-o text-[14px] text-textSpan mr-[-5px]"></i>
+                  <i class="fa fa-star-o text-[14px] text-textSpan mr-[-5px]"></i>
+                </div>
+                <h5 class="text-h3 font-bold">$67.24</h5>
+                <div class="absolute right-0 bottom-0 opacity-0 transition-all"></div>
+              </div>
+            </div>
+          </div>
+          <div class="relative w-full px-[15px] md:w-1/6 sm:w-2/5">
+            <div class="overflow-hidden mb-10">
+              <div style="background-image: url(img/product/product-3.jpg);" class="flex flex-wrap h-[260px] relative bg-center bg-no-repeat bg-cover"></div>
+              <div class="pt-[25px] relative">
+                <h6 class="text-black text-[15px] font-semibold transition-all">Multi-pocket Chest Bag</h6>
+                <div class="mb-[6px]">
+                  <i class="fa fa-star text-[14px] text-label3 mr-[-5px]"></i>
+                  <i class="fa fa-star text-[14px] text-label3 mr-[-5px]"></i>
+                  <i class="fa fa-star text-[14px] text-label3 mr-[-5px]"></i>
+                  <i class="fa fa-star text-[14px] text-label3 mr-[-5px]"></i>
+                  <i class="fa fa-star text-[14px] text-label3 mr-[-5px]"></i>
+                </div>
+                <h5 class="text-h3 font-bold">$67.24</h5>
+                <div class="absolute right-0 bottom-0 opacity-0 transition-all"></div>
+              </div>
+            </div>
+          </div>
+          <div class="relative w-full px-[15px] md:w-1/6 sm:w-2/5">
+            <div class="overflow-hidden mb-10">
+              <div style="background-image: url(img/product/product-4.jpg);" class="flex flex-wrap h-[260px] relative bg-center bg-no-repeat bg-cover"></div>
+              <div class="pt-[25px] relative">
+                <h6 class="text-black text-[15px] font-semibold transition-all">Diagonal Textured Cap</h6>
+                <div class="mb-[6px]">
+                  <i class="fa fa-star-o text-[14px] text-textSpan mr-[-5px]"></i>
+                  <i class="fa fa-star-o text-[14px] text-textSpan mr-[-5px]"></i>
+                  <i class="fa fa-star-o text-[14px] text-textSpan mr-[-5px]"></i>
+                  <i class="fa fa-star-o text-[14px] text-textSpan mr-[-5px]"></i>
+                  <i class="fa fa-star-o text-[14px] text-textSpan mr-[-5px]"></i>
+                </div>
+                <h5 class="text-h3 font-bold">$67.24</h5>
+                <div class="absolute right-0 bottom-0 opacity-0 transition-all"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product section end-->
+
+    <!-- footer-->
+
+    <footer class="bg-black pt-24 pb-12">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mx-10 font-medium text-slate-300 md:w-1/6">
+            <a href="#">
+              <img src="img/footer-logo.png.webp" alt="" class="mb-5">
+            </a>
+            <p class="text-[15px] font-customFont font-normal leading-6 mb-5">The customer is at the heart of our unique business model, which includes design.</p>
+            <a href="#">
+              <img src="img/payment.png.webp" alt="" class="max-w-full align-middle border-none mb-12 ">
+            </a>
+          </div>
+          <div class="w-full px-4 mx-10 mb-10 md:w-1/6">
+            <h6 class="font-bold text-base text-white mb-5">Shopping</h6>
+            <ul class="text-slate-300">
+              <li>
+                <a href="#" class="inline-block text-base mb-3">Clothing Store</a>
+              </li>
+              <li>
+                <a href="#" class="inline-block text-base mb-3">Trending Shoes</a>
+              </li>
+              <li>
+                <a href="#" class="inline-block text-base mb-3">Accessories</a>
+              </li>
+              <li>
+                <a href="#" class="inline-block text-base mb-3">Sale</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full px-4 mx-10 mb-10 md:w-1/6">
+            <h6 class="font-bold text-base text-white mb-5">Shopping</h6>
+            <ul class="text-slate-300">
+              <li>
+                <a href="#" class="inline-block text-base mb-3">Contact Us</a>
+              </li>
+              <li>
+                <a href="#" class="inline-block text-base mb-3">Payment Methods</a>
+              </li>
+              <li>
+                <a href="#" class="inline-block text-base mb-3">Delivary</a>
+              </li>
+              <li>
+                <a href="#" class="inline-block text-base mb-3">Return &</a>
+              </li>
+              <li>
+                <a href="#" class="inline-block text-base mb-3">Exchanges</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full px-0 mx-10 md:w-1/6">
+            <h6 class="font-bold text-base text-white mb-5">New Letter</h6>
+            <p class="text-[15px] font-customFont text-slate-300 font-normal leading-6 mb-5">The customer is at the heart of our unique business model, which includes design.</p>
+            <form action="#" class="relative">
+              <input type="text" placeholder="Your Email" class="w-full text-[15px] text-slate-300 border-none px-[15px] py-0 bg-transparent overflow-visible m-0" style="border-bottom: 2px solid #ffffff; padding: 15px 0;">
+              <button class="text-[16px] absolute right-[5px] top-0 h-full bg-transparent border-none">
+                <span style="display: inline-block; font-size: 16px; color: #ffffff;">✉</span>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="w-full pt-10 mt-10 border-t border-slate-800">
+          <div class="flex items-center justify-center mb-5">
+            <p class="text-slate-300 text-[15px]">Copyright © 2024 All rights reserved | This template is made with <i class="fa fa-heart-o text-rose-500 "></i> by <span class="text-rose-500">Colorlib</span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
+  <script>
+    // let tabs2 = document.getElementById("tabs2");
+    // let tabs3 = document.getElementById("tabs33");
+    // let tabs4 = document.getElementById("tabs44");
+
+    // tabs2.onclick = function () {
+    //   hir.style.backgroundImage = "url(src/shop-details/product-big-3.png)";
+    // };
+    // tabs3.onclick = function () {
+    //   hir.style.backgroundImage = "url(src/shop-details/product-big.png)";
+    // };
+    // tabs4.onclick = function () {
+    //   hir.style.backgroundImage = "url(src/shop-details/product-big-4.png)";
+    // };
+
+
+    const navLinks = document.querySelector('.nav-links')
+    function onToggleMenu(e){
+      e.name = e.name === 'menu' ? 'close' : 'menu'
+      navLinks.classList.toggle('top-[9%]')
+    }
+
+  </script>
+</html>
+  
