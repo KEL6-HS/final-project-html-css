@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <meta name="author" content="Muhamad Faisal Hidayatullah">
+    <meta name="description" content="">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,75..125,200..1000;1,6..12,75..125,200..1000&display=swap');
+
+        .font-family-nunito {
+            font-family: nunito;
+        }
+    </style>
+</head>
+
+<body class="bg-white font-family-nunito">
+    <div class="w-full flex flex-wrap">
+
+        <!-- Image Section -->
+        <div class="w-3/4">
+            <img class="object-cover w-full h-screen hidden md:block" src="coba.jpg">
+        </div>
+
+        <!-- Login Section -->
+        <div class="w-full md:w-1/4 flex flex-col">
+
+            <div class="flex justify-center pt-12">
+                <a href="#" class="p-4"><img src="logo.png" alt=""></a>
+            </div>
+
+            <div class="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-10 lg:px-14">
+                <p class="text-center text-3xl pt-8">Join Us</p>
+                <form class="flex flex-col pt-3 md:pt-4">
+                    <div class="flex flex-col pt-4">
+                        <label for="name" class="text-lg">Name</label>
+                        <input type="text" id="name" placeholder="John Cena"
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline" />
+                    </div>
+
+                    <div class="flex flex-col pt-4">
+                        <label for="email" class="text-lg">Email</label>
+                        <input type="email" id="email" placeholder="example@email.com"
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline" />
+                    </div>
+
+                    <div class="flex flex-col pt-4">
+                        <label for="password" class="text-lg">Password</label>
+                        <input type="password" id="password" placeholder="At least 8 character"
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline" />
+                    </div>
+
+                    <div class="flex flex-col pt-4">
+                        <label for="confirm-password" class="text-lg">Confirm Password</label>
+                        <input type="password" id="confirm-password" placeholder="Confirm your password"
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline" />
+                    </div>
+
+                    <input type="submit" value="Log In"
+                        class="bg-black text-white font-bold text-lg hover:bg-gray-700 p-2 mt-8">
+                </form>
+                <div class="text-center pt-12 pb-12">
+                    <p>Already have an account? <a href="login.html" class="underline font-semibold">Log In here.</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
