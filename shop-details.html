@@ -57,50 +57,43 @@
   >
     <!--Header Start-->
 
-    <header class="bg-white mx-auto px-[15px] my-[25px]">
-      <nav class="flex justify-between items-center w-[92%] mx-auto">
-        <div class="">
-          <a href="index.html">
-           <img class="" src="img/shop-details/logo.png" alt=""/>
-          </a>
+    <div class="container px-3 md:mx-auto max-w-screen-lg">
+            <div class="flex flex-wrap">
+                <div class="sm:w-full lg:w-3/12 md:w-3/12">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt></a>
+                    </div>
+                </div>
+                <div class="sm:w-full md:w-6/12 lg:w-6/12">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="./shop.html">Shop</a></li>
+                            <li><a href="#">Pages</a>
+                                <ul class="dropdown">
+                                    <li><a href="./about.html">About Us</a></li>
+                                    <li><a href="./shop-details.html">Shop Details</a></li>
+                                    <li><a href="./shopping-cart.html">Shopping Cart</a></li>
+                                    <li><a href="./checkout.html">Check Out</a></li>
+                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="sm:w-full lg:w-3/12 md:w-3/12">
+                    <div class="header__nav__option">
+                        <a href="#" class="search-switch"><img src="img/icon/search.png" alt></a>
+                        <a href="#"><img src="img/icon/heart.png" alt></a>
+                        <a href="#"><img src="img/icon/cart.png" alt> <span>0</span></a>
+                        <div class="price">$0.00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
         </div>
-        <div class="nav-links md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-[50%] flex items-center px-5">
-          <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 ">
-            <li>
-              <a class="hover:underline decoration-red-500" href="#">Home</a>
-            </li>
-            <li>
-              <a class="underline decoration-red-700 href="#">Shop</a>
-            </li>
-            <li>
-              <a class="hover:underline decoration-red-500" href="#">Pages</a>
-            </li>
-            <li>
-              <a class="hover:underline decoration-red-500" href="#">Blog</a>
-            </li>
-            <li>
-              <a class="hover:underline decoration-red-500" href="#">Contacts</a>
-            </li>
-          </ul>
-        </div>
-        <div class="flex items-center text-right">
-          <a href="#" class="">
-            <img src="img/icon/search.png" alt="">
-          </a>
-          <a href="#"class="px-5 py-2">
-            <img src="img/icon/heart.png" alt="">
-          </a>
-          <a href="#"class="px-1 py-2 ">
-            <img src="img/icon/cart.png" alt=""> <!-- <span class="text-xs absolute top-[10px] right-[85px] ">0</span> -->
-          </a>
-          <div class="px-1">$0.00</div>
-        </div>
-        <div class="flex items-center gap-6">
-          <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
-        </div>
-        
-      </nav>
-    </header>
 
     <!--Header End-->
 
@@ -448,74 +441,70 @@
 
     <!-- footer-->
 
-    <footer class="bg-black pt-24 pb-12">
-      <div class="container">
+    <footer class="footer">
+    <div class="container lg:mx-auto px-4">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mx-10 font-medium text-slate-300 md:w-1/6">
-            <a href="#">
-              <img src="img/footer-logo.png.webp" alt="" class="mb-5">
-            </a>
-            <p class="text-[15px] font-customFont font-normal leading-6 mb-5">The customer is at the heart of our unique business model, which includes design.</p>
-            <a href="#">
-              <img src="img/payment.png.webp" alt="" class="max-w-full align-middle border-none mb-12 ">
-            </a>
-          </div>
-          <div class="w-full px-4 mx-10 mb-10 md:w-1/6">
-            <h6 class="font-bold text-base text-white mb-5">Shopping</h6>
-            <ul class="text-slate-300">
-              <li>
-                <a href="#" class="inline-block text-base mb-3">Clothing Store</a>
-              </li>
-              <li>
-                <a href="#" class="inline-block text-base mb-3">Trending Shoes</a>
-              </li>
-              <li>
-                <a href="#" class="inline-block text-base mb-3">Accessories</a>
-              </li>
-              <li>
-                <a href="#" class="inline-block text-base mb-3">Sale</a>
-              </li>
-            </ul>
-          </div>
-          <div class="w-full px-4 mx-10 mb-10 md:w-1/6">
-            <h6 class="font-bold text-base text-white mb-5">Shopping</h6>
-            <ul class="text-slate-300">
-              <li>
-                <a href="#" class="inline-block text-base mb-3">Contact Us</a>
-              </li>
-              <li>
-                <a href="#" class="inline-block text-base mb-3">Payment Methods</a>
-              </li>
-              <li>
-                <a href="#" class="inline-block text-base mb-3">Delivary</a>
-              </li>
-              <li>
-                <a href="#" class="inline-block text-base mb-3">Return &</a>
-              </li>
-              <li>
-                <a href="#" class="inline-block text-base mb-3">Exchanges</a>
-              </li>
-            </ul>
-          </div>
-          <div class="w-full px-0 mx-10 md:w-1/6">
-            <h6 class="font-bold text-base text-white mb-5">New Letter</h6>
-            <p class="text-[15px] font-customFont text-slate-300 font-normal leading-6 mb-5">The customer is at the heart of our unique business model, which includes design.</p>
-            <form action="#" class="relative">
-              <input type="text" placeholder="Your Email" class="w-full text-[15px] text-slate-300 border-none px-[15px] py-0 bg-transparent overflow-visible m-0" style="border-bottom: 2px solid #ffffff; padding: 15px 0;">
-              <button class="text-[16px] absolute right-[5px] top-0 h-full bg-transparent border-none">
-                <span style="display: inline-block; font-size: 16px; color: #ffffff;">✉</span>
-              </button>
-            </form>
-          </div>
+            <div class="lg:w-3/12 md:w-6/12 sm:w-6/12">
+                <div class="footer__about">
+                    <div class="footer__logo">
+                        <a href="#"><img src="img/footer-logo.png" alt></a>
+                    </div>
+                    <p>The customer is at the heart of our unique business model, which includes design.</p>
+                    <a href="#"><img src="img/payment.png" alt></a>
+                </div>
+            </div>
+            <div class="lg:w-2/12 md:w-3/12 sm:w-6/12 offset-lg-1">
+                <div class="footer__widget">
+                    <h6>Shopping</h6>
+                    <ul>
+                        <li><a href="#">Clothing Store</a></li>
+                        <li><a href="#">Trending Shoes</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lg:w-2/12 md:w-3/12 sm:w-6/12">
+                <div class="footer__widget">
+                    <h6>Shopping</h6>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Payment Methods</a></li>
+                        <li><a href="#">Delivary</a></li>
+                        <li><a href="#">Return & Exchanges</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lg:w-3/12 md:w-6/12 sm:w-6/12 offset-lg-1">
+                <div class="footer__widget">
+                    <h6>NewLetter</h6>
+                    <div class="footer__newslatter">
+                        <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                        <form action="#">
+                            <input type="text" placeholder="Your email">
+                            <button type="submit"><span class="icon_mail_alt"></span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="w-full pt-10 mt-10 border-t border-slate-800">
-          <div class="flex items-center justify-center mb-5">
-            <p class="text-slate-300 text-[15px]">Copyright © 2024 All rights reserved | This template is made with <i class="fa fa-heart-o text-rose-500 "></i> by <span class="text-rose-500">Colorlib</span></p>
-          </div>
-        </div>
-      </div>
-    </footer>
+        <div class="row">
+            <div class="lg:w-full text-center">
+                <div class="footer__copyright__text">
 
+                    <p>Copyright ©
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        All rights reserved | This template is made with <i class="fa fa-heart-o"
+                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
   </body>
   <script>
