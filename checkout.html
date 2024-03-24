@@ -1,118 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Check Out</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <nav class="p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <img src="/logo.png" alt="">
-            <ul class="flex">
-                <li><a class="text-black-300 rounded-3xl hover:bg-stone-200 px-3 py-2" href="#">Home</a></li>
-                <li><a class="text-black-300 rounded-3xl hover:bg-stone-200 px-3 py-2" href="#">Shop</a></li>
-                <li><a class="text-black-300 rounded-3xl hover:bg-stone-200 px-3 py-2" href="#">Pages</a></li>
-                <li><a class="text-black-300 rounded-3xl hover:bg-stone-200 px-3 py-2" href="#">Blog</a></li>
-                <li><a class="text-black-300 rounded-3xl hover:bg-stone-200 px-3 py-2" href="#">Contact</a></li>
-            </ul>
-            <a class="rounded-3xl ext-black-300 hover:bg-stone-200 px-3 py-2" href="#">$0.00</a>
+    <header class="container">
+        <div class="flex flex-1 flex-row justify-between items-center mx-auto sm:mx-[174.6px] px-[15px] h-[84.3px]">
+            <div class=" md:block">
+                <a href="#"><img src="/logo.png" alt=""></a>
+            </div>
+            <div class="hidden lg:block">
+                <nav class="p-4">
+                    <ul class="flex">
+                        <li><a class="text-black-300 rounded-3xl hover:bg-stone-200 px-3 py-2" href="#">Home</a></li>
+                        <li><a class="text-black-300 rounded-3xl hover:bg-stone-200 px-3 py-2" href="#">Shop</a></li>
+                        <li><a class="text-black-300 rounded-3xl hover:bg-stone-200 px-3 py-2" href="#">Pages</a></li>
+                        <li><a class="text-black-300 rounded-3xl hover:bg-stone-200 px-3 py-2" href="#">Blog</a></li>
+                        <li><a class="text-black-300 rounded-3xl hover:bg-stone-200 px-3 py-2" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hidden lg:block">
+                <a class="rounded-3xl ext-black-300 hover:bg-stone-200 px-3 py-2" href="#">$0.00</a>
+            </div>
         </div>
-    </nav>
+    </header>
 
     <div class="mx-auto max-w-7xl items-center justify-between bg-stone-200 p-6 lg:px-8">
-        <h1>Checkk Out</h1>
-        <p class="mb-2"><a href="#" class="text-blue-500">Home</a> > <a href="#" class="text-blue-500">Shop</a> > Checkout</p>
+        <h1>Check Out</h1>
+        <p class="mb-2"><a href="#" class="text-blue-500">Home</a> > <a href="#" class="text-blue-500">Shop</a> >
+            Check Out</p>
     </div>
 
-    <div class="container mx-auto mt-8 grid grid-cols-3 gap-8">
-        <div class="col-span-2">
-          <div class=" p-8 rounded-lg shadow-md">
-            <h2 class="text-2xl font-bold mb-4">Checkout</h2>
-            <form>
-              <div class="grid grid-cols-2 gap-4">
-                <div class="mb-4">
-                 <label for="firstname" class="block text-gray-700 text-sm font-bold mb-2">Fist Name</label>
-                 <input type="text" id="firstname" name="firstname" class="w-full px-3 py-2 border rounded">
-                </div>
-                <div class="mb-4">
-                 <label for="lastname" class="block text-gray-700 text-sm font-bold mb-2">Last Name</label>
-                 <input type="text" id="lastname" name="lastname" class="w-full px-3 py-2 border rounded-lg">
-                </div>
-              </div>
-              <div class="mb-4">
-                 <label for="country" class="block text-gray-700 text-sm font-bold mb-2">Country</label>
-                 <input type="text" id="country" name="country" class="w-full px-3 py-2 border rounded-lg">
-              </div>
-              <div class="mb-4">
-                 <label for="address" class="block text-gray-700 text-sm font-bold mb-2">Address</label>
-                 <textarea id="address" name="address" class="w-full px-3 py-2 border rounded-lg"></textarea>
-              </div>
-              
-              <div class="mb-4">
-                 <label for="state" class="block text-gray-700 text-sm font-bold mb-2">Country/State</label>
-                 <input type="text" id="state" name="state" class="w-full px-3 py-2 border rounded-lg">
-              </div>
-              
-              <div class="mb-4">
-                 <label for="postcode" class="block text-gray-700 text-sm font-bold mb-2">Postcode/ZIP</label>
-                 <input type="text" id="postcode" name="postcode" class="w-full px-3 py-2 border rounded-lg">
-              </div>
-            </form>
-          </div>
-        </div>
-        
-        <div class="col-span-1">
-            <div class="bg-stone-200 p-8 rounded-lg shadow-md">
-             <h2 class="text-2xl font-bold mb-4">YOUR ORDER</h2>
-             <div class="py-2">
-                <div class="flex justify-between">
-                    <p class="font-semibold">Product</p>
-                    <p class="font-semibold">Total</p>
-                </div>
-                <div class="flex justify-between">
-                    <p class="text-gray-600">01. Vanilla salted caramel</p>
-                    <p class="text-gray-600">$300.0</p>
-                </div>
-                <div class="flex justify-between">
-                    <p class="text-gray-600">02. German chocolate</p>
-                    <p class="text-gray-600">$170.0</p>
-                </div>
-                <div class="flex justify-between">
-                    <p class="text-gray-600">03. Sweet autumn</p>
-                    <p class="text-gray-600">$170.0</p>
-                </div>
-                <div class="flex justify-between">
-                    <p class="text-gray-600">04. Cluten free mini dozen</p>
-                    <p class="text-gray-600">$110.0</p>
-                </div>
-             </div>
-             <div class="py-2">
-                <div class="flex justify-between">
-                    <p class="font-semibold">Subtotal</p>
-                    <p class="font-semibold">$750.99</p>
-                </div>
-                <div class="flex justify-between">
-                    <p class="font-semibold">Total</p>
-                    <p class="font-semibold">$750.99</p>
-                </div>
-             </div>
-             
-             <div class="flex items-center space-x-4 mt-4">
-                <input type="checkbox" id="checkbox" class="form-checkbox h-6 w-6 text-indigo-600">
-                <label for="checkbox" class="text-gray-800">Check Payment</label>
-             </div>
-             <div class="flex items-center space-x-4 mt-4">
-                <input type="checkbox" id="checkbox" class="form-checkbox h-6 w-6 text-indigo-600">
-                <label for="checkbox" class="text-gray-800">Paypal</label>
-             </div>
-             <div class="flex justify-center mt-4">
-                <button type="submit" class="bg-black text-white font-semibold w-full px-2 py-2 rounded inline-block">PLACE ORDER</button>
+    <div class="container mx-auto mt-8 grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-8">
+        <div class="col-span-2 mx-3 sm:mx-auto">
+            <div class=" p-8 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4">Check Out</h2>
+                <form>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="mb-4">
+                            <label for="firstname" class="block text-gray-700 text-sm font-bold mb-2">Fist Name</label>
+                            <input type="text" id="firstname" name="firstname" class="w-full px-3 py-2 border rounded">
+                        </div>
+                        <div class="mb-4">
+                            <label for="lastname" class="block text-gray-700 text-sm font-bold mb-2">Last Name</label>
+                            <input type="text" id="lastname" name="lastname" class="w-full px-3 py-2 border rounded-lg">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="country" class="block text-gray-700 text-sm font-bold mb-2">Country</label>
+                        <input type="text" id="country" name="country" class="w-full px-3 py-2 border rounded-lg">
+                    </div>
+                    <div class="mb-4">
+                        <label for="address" class="block text-gray-700 text-sm font-bold mb-2">Address</label>
+                        <textarea id="address" name="address" class="w-full px-3 py-2 border rounded-lg"></textarea>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="state" class="block text-gray-700 text-sm font-bold mb-2">Country/State</label>
+                        <input type="text" id="state" name="state" class="w-full px-3 py-2 border rounded-lg">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="postcode" class="block text-gray-700 text-sm font-bold mb-2">Postcode/ZIP</label>
+                        <input type="text" id="postcode" name="postcode" class="w-full px-3 py-2 border rounded-lg">
+                    </div>
+                </form>
             </div>
+        </div>
+
+        <div class="col-span-1 mx-3 sm:mx-auto justify-center">
+            <div class="bg-stone-200 p-8 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4">YOUR ORDER</h2>
+                <div class="py-2">
+                    <div class="flex justify-between">
+                        <p class="font-semibold">Product</p>
+                        <p class="font-semibold">Total</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="text-gray-600">01. Vanilla salted caramel</p>
+                        <p class="text-gray-600">$300.0</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="text-gray-600">02. German chocolate</p>
+                        <p class="text-gray-600">$170.0</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="text-gray-600">03. Sweet autumn</p>
+                        <p class="text-gray-600">$170.0</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="text-gray-600">04. Cluten free mini dozen</p>
+                        <p class="text-gray-600">$110.0</p>
+                    </div>
+                </div>
+                <div class="py-2">
+                    <div class="flex justify-between">
+                        <p class="font-semibold">Subtotal</p>
+                        <p class="font-semibold">$750.99</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="font-semibold">Total</p>
+                        <p class="font-semibold">$750.99</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 mt-4">
+                    <input type="checkbox" id="checkbox" class="form-checkbox h-6 w-6 text-indigo-600">
+                    <label for="checkbox" class="text-gray-800">Check Payment</label>
+                </div>
+                <div class="flex items-center space-x-4 mt-4">
+                    <input type="checkbox" id="checkbox" class="form-checkbox h-6 w-6 text-indigo-600">
+                    <label for="checkbox" class="text-gray-800">Paypal</label>
+                </div>
+                <div class="flex justify-center mt-4">
+                    <button type="submit"
+                        class="bg-black text-white font-semibold w-full px-2 py-2 rounded inline-block">PLACE
+                        ORDER</button>
+                </div>
             </div>
         </div>
     </div>
-    
+
 </body>
+
 </html>
