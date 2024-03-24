@@ -5,34 +5,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check Out</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <header class="container">
-        <div class="flex flex-1 flex-row justify-between items-center mx-auto sm:mx-[174.6px] px-[15px] h-[84.3px]">
-            <div class=" md:block">
-                <a href="#"><img src="/logo.png" alt=""></a>
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                <a href="#">Sign in</a>
+                <a href="#">FAQs</a>
             </div>
-            <div class="hidden lg:block">
-                <nav class="p-4">
-                    <ul class="flex">
-                        <li><a class="text-black-300 rounded-3xl hover:bg-stone-200 px-3 py-2" href="#">Home</a></li>
-                        <li><a class="text-black-300 rounded-3xl hover:bg-stone-200 px-3 py-2" href="#">Shop</a></li>
-                        <li><a class="text-black-300 rounded-3xl hover:bg-stone-200 px-3 py-2" href="#">Pages</a></li>
-                        <li><a class="text-black-300 rounded-3xl hover:bg-stone-200 px-3 py-2" href="#">Blog</a></li>
-                        <li><a class="text-black-300 rounded-3xl hover:bg-stone-200 px-3 py-2" href="#">Contact</a></li>
-                    </ul>
-                </nav>
+            <div class="offcanvas__top__hover">
+                <span>Usd <i class="arrow_carrot-down"></i></span>
+                <ul>
+                    <li>USD</li>
+                    <li>EUR</li>
+                    <li>USD</li>
+                </ul>
             </div>
-            <div class="hidden lg:block">
-                <a class="rounded-3xl ext-black-300 hover:bg-stone-200 px-3 py-2" href="#">$0.00</a>
+        </div>
+        <div class="offcanvas__nav__option">
+            <a href="#" class="search-switch"><img src="img/icon/search.png" alt></a>
+            <a href="#"><img src="img/icon/heart.png" alt></a>
+            <a href="#"><img src="img/icon/cart.png" alt> <span>0</span></a>
+            <div class="price">$0.00</div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__text">
+            <p>Free shipping, 30-day return or refund guarantee.</p>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container md:mx-auto max-w-screen-lg">
+                <div class="flex">
+                    <div class="lg:w-6/12 md:w-7/12">
+                        <div class="header__top__left">
+                            <p>Free shipping, 30-day return or refund guarantee.</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-6/12 md:w-5/12">
+                        <div class="header__top__right">
+                            <div class="header__top__links">
+                                <a href="#">Sign in</a>
+                                <a href="#">FAQs</a>
+                            </div>
+                            <div class="header__top__hover">
+                                <span>Usd <i class="arrow_carrot-down"></i></span>
+                                <ul>
+                                    <li>USD</li>
+                                    <li>EUR</li>
+                                    <li>USD</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="container px-3 md:mx-auto max-w-screen-lg">
+            <div class="flex flex-wrap">
+                <div class="sm:w-full lg:w-3/12 md:w-3/12">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt></a>
+                    </div>
+                </div>
+                <div class="sm:w-full md:w-6/12 lg:w-6/12">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="./shop.html">Shop</a></li>
+                            <li><a href="#">Pages</a>
+                                <ul class="dropdown">
+                                    <li><a href="./about.html">About Us</a></li>
+                                    <li><a href="./shop-details.html">Shop Details</a></li>
+                                    <li><a href="./shopping-cart.html">Shopping Cart</a></li>
+                                    <li><a href="./checkout.html">Check Out</a></li>
+                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="sm:w-full lg:w-3/12 md:w-3/12">
+                    <div class="header__nav__option">
+                        <a href="#" class="search-switch"><img src="img/icon/search.png" alt></a>
+                        <a href="#"><img src="img/icon/heart.png" alt></a>
+                        <a href="#"><img src="img/icon/cart.png" alt> <span>0</span></a>
+                        <div class="price">$0.00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
         </div>
     </header>
 
     <div class="mx-auto max-w-7xl items-center justify-between bg-stone-200 p-6 lg:px-8">
-        <h1>Check Out</h1>
+        <h4>Check Out</h4>
         <p class="mb-2"><a href="#" class="text-blue-500">Home</a> > <a href="#" class="text-blue-500">Shop</a> >
             Check Out</p>
     </div>
@@ -76,7 +162,7 @@
 
         <div class="col-span-1 m-8 justify-center">
             <div class="bg-stone-200 p-8 rounded-lg shadow-md">
-                <h2 class="text-2xl font-bold mb-4">YOUR ORDER</h2>
+                <h3 class="text-2xl font-bold mb-4">YOUR ORDER</h3>
                 <div class="py-2">
                     <div class="flex justify-between">
                         <p class="font-semibold">Product</p>
@@ -127,6 +213,84 @@
         </div>
     </div>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container lg:mx-auto px-4">
+            <div class="flex flex-wrap">
+                <div class="lg:w-3/12 md:w-6/12 sm:w-6/12">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src="img/footer-logo.png" alt></a>
+                        </div>
+                        <p>The customer is at the heart of our unique business model, which includes design.</p>
+                        <a href="#"><img src="img/payment.png" alt></a>
+                    </div>
+                </div>
+                <div class="lg:w-2/12 md:w-3/12 sm:w-6/12 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Shopping</h6>
+                        <ul>
+                            <li><a href="#">Clothing Store</a></li>
+                            <li><a href="#">Trending Shoes</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Sale</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-2/12 md:w-3/12 sm:w-6/12">
+                    <div class="footer__widget">
+                        <h6>Shopping</h6>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Payment Methods</a></li>
+                            <li><a href="#">Delivary</a></li>
+                            <li><a href="#">Return & Exchanges</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-3/12 md:w-6/12 sm:w-6/12 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>NewLetter</h6>
+                        <div class="footer__newslatter">
+                            <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                            <form action="#">
+                                <input type="text" placeholder="Your email">
+                                <button type="submit"><span class="icon_mail_alt"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="lg:w-full text-center">
+                    <div class="footer__copyright__text">
+
+                        <p>Copyright ©
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved | This template is made with <i class="fa fa-heart-o"
+                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
