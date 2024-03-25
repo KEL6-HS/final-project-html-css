@@ -8,8 +8,9 @@
     <meta name="author" content="Muhamad Faisal Hidayatullah">
     <meta name="description" content="">
 
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
@@ -30,34 +31,35 @@
             </div>
 
             <div class="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-10 lg:px-14">
-                <p class="text-center text-3xl pt-8">Join Us</p>
+                <p class="text-center text-3xl font-semibold">Join Us</p>
                 <form class="flex flex-col pt-3 md:pt-4" action="index.html">
-                    <div class="flex flex-col pt-4">
-                        <label for="name" class="text-base">Name</label>
+                    <div class="pt-4">
+                        <label for="name" class="text-base font-medium">Name</label>
                         <input type="text" id="name" placeholder="John Cena"
-                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline" />
+                            class="shadow border rounded w-full py-2 px-3 border-gray-300 text-gray-700 mt-1 focus:ring-black-500 focus:border-black-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-black-500 dark:focus:border-black-500" />
                     </div>
 
-                    <div class="flex flex-col pt-4">
-                        <label for="email" class="text-base">Email</label>
+                    <div class="pt-4">
+                        <label for="email" class="text-base font-medium">Email</label>
                         <input type="email" id="email" placeholder="example@email.com"
-                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline" />
+                            class="shadow border rounded w-full py-2 px-3 border-gray-300 text-gray-700 mt-1 focus:ring-black-500 focus:border-black-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-black-500 dark:focus:border-black-500" />
                     </div>
 
-                    <div class="flex flex-col pt-4">
-                        <label for="password" class="text-base">Password</label>
+                    <div class="pt-4">
+                        <label for="password" class="text-base font-medium">Password</label>
                         <input type="password" id="password" placeholder="At least 8 character"
-                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline" />
+                            class="shadow border rounded w-full py-2 px-3 border-gray-300 text-gray-700 mt-1 focus:ring-black-500 focus:border-black-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-black-500 dark:focus:border-black-500" />
                     </div>
 
-                    <div class="flex flex-col pt-4">
-                        <label for="confirm-password" class="text-base">Confirm Password</label>
+                    <div class="pt-4">
+                        <label for="confirm-password" class="text-base font-medium">Confirm Password</label>
                         <input type="password" id="confirm-password" placeholder="Confirm your password"
-                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline" />
+                            class="shadow border rounded w-full py-2 px-3 border-gray-300 text-gray-700 mt-1 focus:ring-black-500 focus:border-black-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-black-500 dark:focus:border-black-500" />
                     </div>
 
-                    <input type="submit" value="Sign Out"
-                        class="bg-black text-white font-bold text-base hover:bg-gray-700 p-2 mt-8">
+                    <button type="submit" class="bg-[#0C1421] font-semibold text-white p-2 mt-8 hover:scale-105 duration-300">
+                        Sign Out
+                    </button>
                 </form>
                 <div class="text-center pt-12 pb-12">
                     <p>Already have an account? <a href="sign_in.html" class="underline font-semibold">Sign In.</a>
